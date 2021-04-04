@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/fav"
+        android:title="Favourite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/main_menu"
+        android:title="Main Menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_more_vert_24">
+        <menu>
+            <item
+                android:title="Settings"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:id="@+id/setting"
+                app:showAsAction="never" />
+            <item
+                android:title="Add Location"
+                android:icon="@drawable/ic_baseline_location_searching_24"
+                android:id="@+id/location"
+                app:showAsAction="never" />
+            <item
+                android:title="Contact us"
+                android:id="@+id/contact"
+                android:icon="@drawable/ic_baseline_contacts_24"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+</menu>
